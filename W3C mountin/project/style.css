@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	/*для адаптивной верстки обязательно*/
+}
+body {
+	font-family: Tahoma, sans-serif;
+	color: black;
+}
+
+.main {
+	width: 80%;
+	min-height: 100px;
+	margin: 20px auto;
+}
+header {
+	min-height: 90px;
+	padding: 30px 20px;
+	margin: 20px 0;
+	background: #ebebe0;
+	margin-bottom: 10px;
+}
+nav {
+	width: 20%;
+	float: left;
+	min-height: 200px;
+	line-height: 30px;
+	padding: 20px;
+}
+article {
+	width: 60%;
+	float: left;
+	padding: 20px;
+	min-height: 200px;
+}
+article img {
+	display: block;
+	width: 100%;
+	min-width: 80%;
+	margin: 20px auto;
+}
+aside {
+	width: 20%;
+	background: #ccf5ff;
+	float: left;
+	padding: 10px;
+}
+
+nav li {
+	list-style-type: none;
+	border-bottom: 1px solid #deded4;
+	font-size: 17px;
+	margin: 20px 0;
+}
+li {
+	list-style-type: none;
+	font-size: 17px;
+	margin: 20px 0;
+}
+h2 {
+	margin-bottom: 20px;
+}
+.one p {
+	margin: 15px 0;
+}
+.two {
+	display: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	/*0px ... 800px  АДАПТИВНАЯ ВЕРСТКА*/
+	.main {
+		width: 98%;
+	}
+	
+	nav {
+		width: 50%;
+	}
+	.two {
+		width: 50%;
+		display: block;
+	}
+	.one {
+		display: none;
+	}	
+	article {
+		width: 100%;
+	}
+	h3 {
+		margin: 10px;
+	}
+
+}
+
+
+@media screen and (max-width: 480px) {
+	nav {
+		width: 100%;
+	}
+	.two {
+		width: 100%;
+	}
+	article {
+		width: 100%;
+	}
+}
+
+
+@media print {
+	body {
+		display: none;
+	}
+}
